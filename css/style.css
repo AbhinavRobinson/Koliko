@@ -1,0 +1,46 @@
+/* Imports Lato 300 from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+/* universal selector // reset */
+* {
+    /* border box adds padding/margins to elemets without adding width.  */
+    box-sizing: border-box;
+
+    /* remove unnecessary spacings */
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* Uses imported font */
+    font-family: "Lato", sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    /* Get rid of bullets */
+    list-style-type: none;
+}
+
+a {
+    /* remove blue hyperlinks */
+    text-decoration: none;
+    color: #333;
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {
+    /* Spacing between paragraphs */
+    margin: 10px 0;
+}
+
+img {
+    /* images stay within container */
+    width: 100%;
+}
