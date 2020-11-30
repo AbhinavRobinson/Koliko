@@ -1,5 +1,7 @@
-/* Imports Lato 300 from google fonts */
+/* imports Lato 300 from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+/* ---- UNIVERSAL ---- */
 
 /* universal selector // reset */
 * {
@@ -12,14 +14,14 @@
 }
 
 body {
-    /* Uses imported font */
+    /* uses imported font */
     font-family: "Lato", sans-serif;
     color: #333;
     line-height: 1.6;
 }
 
 ul {
-    /* Get rid of bullets */
+    /* get rid of bullets */
     list-style-type: none;
 }
 
@@ -30,17 +32,83 @@ a {
 }
 
 h1, h2 {
+    /* format headings */
     font-weight: 300;
     line-height: 1.2;
     margin: 10px 0;
 }
 
 p {
-    /* Spacing between paragraphs */
+    /* spacing between paragraphs */
     margin: 10px 0;
 }
 
 img {
     /* images stay within container */
     width: 100%;
+}
+
+/* ---- END OF UNIVERSAL ---- */
+
+/* ---- NAVBAR ---- */
+
+.navbar {
+    /* format navbar */
+    background-color: #047aed;
+    color: #fff;
+
+    /* height of navbar */
+    height: 70px;
+}
+
+.navbar ul {
+    /* assigns to menu items */
+    display: flex;
+}
+
+.navbar a {
+    /* link color */
+    color: #fff;
+
+    /* spacing between links */
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    /* puts line below on hover */
+    border-bottom: 2px #fff solid;
+}
+
+.navbar .flex{
+    /* puts max space between boxes */
+    justify-content: space-between;
+}
+
+/* ---- END OF NAVBAR ---- */
+
+.container {
+    max-width: 1100px;
+    /* auto tag adjusts it to remain within max width */
+    margin: 0 auto;
+
+    /* gets rid of extra space from top */
+    overflow: auto;
+
+    /* fixes for small displays */
+    padding: 0 40px;
+}
+
+.flex{
+    /* time to flex :) */
+    display: flex;
+
+    /* moves boxes to center (main-axis: defined by flex direction) */
+    justify-content: center;
+
+    /* aligns items vertically (cross-axis: defined by flex direction) */
+    align-items: center;
+    
+    /* fit container */
+    height: 100%;
 }
