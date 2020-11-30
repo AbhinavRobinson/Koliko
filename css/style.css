@@ -1,6 +1,12 @@
 /* imports Lato 300 from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
+/* declares global variables : scope -> root */
+:root {
+    /* default color */
+    --primary-color: #047aed;
+}
+
 /* ---- UNIVERSAL ---- */
 
 /* universal selector // reset */
@@ -50,11 +56,59 @@ img {
 
 /* ---- END OF UNIVERSAL ---- */
 
+/* ---- UTILITIES ---- */
+
+.container {
+    max-width: 1100px;
+    /* auto tag adjusts it to remain within max width */
+    margin: 0 auto;
+
+    /* gets rid of extra space from top */
+    overflow: auto;
+
+    /* fixes for small displays */
+    padding: 0 40px;
+}
+
+.flex{
+    /* time to flex :) */
+    display: flex;
+
+    /* moves boxes to center (main-axis: defined by flex direction) */
+    justify-content: center;
+
+    /* aligns items vertically (cross-axis: defined by flex direction) */
+    align-items: center;
+
+    /* fit container */
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+
+    /* divide space in fractions for each child within container */
+    /* repeat(2, 1fr) == 1fr 1fr */
+    grid-template-columns: repeat(2, 1fr);
+
+    /* space between grid items */
+    gap: 20px;
+
+    /* center items */
+    justify-content: center;
+    align-items: center;
+
+    /* fit grid to container */
+    height: 100%;
+}
+
+/* ---- END OF UTILITIES ---- */
+
 /* ---- NAVBAR ---- */
 
 .navbar {
     /* format navbar */
-    background-color: #047aed;
+    background-color: var(--primary-color);
     color: #fff;
 
     /* height of navbar */
@@ -87,28 +141,36 @@ img {
 
 /* ---- END OF NAVBAR ---- */
 
-.container {
-    max-width: 1100px;
-    /* auto tag adjusts it to remain within max width */
-    margin: 0 auto;
+/* ---- SHOWCASE ---- */
 
-    /* gets rid of extra space from top */
-    overflow: auto;
+.showcase {
+    /* section height */
+    height: 400px;
 
-    /* fixes for small displays */
-    padding: 0 40px;
-}
-
-.flex{
-    /* time to flex :) */
-    display: flex;
-
-    /* moves boxes to center (main-axis: defined by flex direction) */
-    justify-content: center;
-
-    /* aligns items vertically (cross-axis: defined by flex direction) */
-    align-items: center;
+    /* pick primary color from global scope */
+    background-color: var(--primary-color);
+    color: #fff;
     
-    /* fit container */
-    height: 100%;
+    /* to allow some items inside to be absolute (if required) */
+    position: relative;
 }
+
+.showcase h1 {
+    /* increase heading size (Easier Deployment) */
+    font-size: 40px;
+}
+
+.showcase p {
+    /* more space between paragraphs */
+    margin: 20px 0;
+}
+
+.showcase .grid {
+    /* reset spacing with new fractions */
+    grid-template-columns: 55% 45%;
+
+    /* reset gap */
+    gap: 30px;
+}
+
+/* ---- END OF SHOWCASE */
