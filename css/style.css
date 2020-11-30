@@ -102,6 +102,38 @@ img {
     height: 100%;
 }
 
+.card {
+    background-color: #fff;
+    color: #333;
+
+    /* make it feel raised from screen */
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+
+    /* internal spacings */
+    padding: 20px;
+    margin: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    transform: scale(0.98);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px #fff solid;
+}
+
 /* ---- END OF UTILITIES ---- */
 
 /* ---- NAVBAR ---- */
@@ -166,11 +198,75 @@ img {
 }
 
 .showcase .grid {
+    /* makes card hang over other div */
+    overflow: visible;
+
     /* reset spacing with new fractions */
     grid-template-columns: 55% 45%;
 
     /* reset gap */
     gap: 30px;
+}
+
+.showcase-form {
+    position: relative;
+    
+    /* push card down */
+    top: 60px;
+
+    /* extends card beyond container */
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    
+    /* is always on top */
+    z-index: 100;
+    
+    /* stays on screen */
+    justify-self: flex-end;
+}
+
+.showcase-form .form-control {
+    /* space between form items */
+    margin: 30px 0;
+}
+
+.showcase-form input[type='text'], 
+.showcase-form input[type='email'] {
+    /* removes all border lines */
+    border: 0;
+
+    /* adds a line below text */
+    border-bottom: 1px solid #b4becb;
+
+    /* span entire container */
+    width: 100%;
+
+    /* space inside form item */
+    padding: 3px;
+    font-size: 16px;
+}
+
+.showcase-form input:focus{
+    /* removes outlines when clicked */
+    outline: none;
+}
+
+.showcase::before,
+.showcase::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+
+    /* creates angled div look */
+    background-color: white;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
 }
 
 /* ---- END OF SHOWCASE */
