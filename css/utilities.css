@@ -12,6 +12,10 @@
     padding: 0 40px;
 }
 
+.text-center {
+    text-align: center;
+}
+ 
 .flex{
     /* time to flex :) */
     display: flex;
@@ -45,6 +49,7 @@
 }
 
 .grid-3 {
+    /* 3 items in one row */
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -81,3 +86,27 @@
 }
 
 /* ---- END OF UTILITIES ---- */
+
+/* ---- MARGINS ---- */
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.my-2 {
+    margin: 1.5rem 0;
+}
+
+.my-3 {
+    margin: 2rem 0;
+}
+
+.my-4 {
+    margin: 3rem 0;
+}
+
+.my-5 {
+    margin: 4rem 0;
+}
+
+/* ---- END OF MARGINS */
