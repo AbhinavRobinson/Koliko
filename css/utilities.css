@@ -1,4 +1,4 @@
-/* ---- UTILITIES ---- */
+/* ---- UTILITIY CLASSES ---- */
 
 .container {
     max-width: 1100px;
@@ -53,6 +53,11 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
+.grid-4 {
+    /* 4 items in one row */
+    grid-template-columns: repeat(4, 1fr);
+}
+
 .card {
     background-color: #fff;
     color: #333;
@@ -84,8 +89,6 @@
     background-color: transparent;
     border: 1px #fff solid;
 }
-
-/* ---- END OF UTILITIES ---- */
 
 /* ---- MARGINS ---- */
 
