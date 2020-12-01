@@ -270,3 +270,12 @@ img {
 }
 
 /* ---- END OF SHOWCASE */
+
+/* ---- STATS ---- */
+
+.stats {
+    /* pushes down below the slanted div */
+    padding-top: 100px;
+}
+
+/* ---- END OF STATS ---- */
