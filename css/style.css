@@ -33,6 +33,8 @@ body {
     font-family: "Lato", sans-serif;
     color: #333;
     line-height: 1.6;
+
+    overflow-x: hidden;
 }
 
 ul {
@@ -196,6 +198,8 @@ img {
     -webkit-transform: scale(1.5) skewY(-3deg);
     -moz-transform: scale(1.5) skewY(-3deg);
     -ms-transform: scale(1.5) skewY(-3deg);
+
+    overflow-x: hidden;
 }
 
 /* ---- END OF SHOWCASE */
@@ -246,3 +250,29 @@ img {
 }
 
 /* ---- END OF CLOUD ---- */
+
+/* ---- LANGUAGES ----- */
+
+.languages .flex {
+    /* wrap items to next line */
+    flex-wrap: wrap;
+}
+
+.languages .card {
+    text-align: center;
+    margin: 18px 10px 40px;
+
+    /* smooth language card animation */
+    transition: transform 0.2s ease-in-out;
+}
+
+.languages .card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.languages .card:hover {
+    transform: translateY(-15px);
+}
+
+/* ---- END OF LANGUAGES ---- */
