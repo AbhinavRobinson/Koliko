@@ -5,6 +5,15 @@
 :root {
     /* default color */
     --primary-color: #047aed;
+
+    /* secondary color */
+    --secondary-color: #1c3fa8;
+
+    /* dark color */
+    --dark-color: #002240;
+
+    /* secondary color */
+    --light-color: #f4f4f4;
 }
 
 /* ---- UNIVERSAL ---- */
@@ -183,10 +192,10 @@ img {
 
     /* creates angled div look */
     background-color: white;
-    transform: skewY(-3deg);
-    -webkit-transform: skewY(-3deg);
-    -moz-transform: skewY(-3deg);
-    -ms-transform: skewY(-3deg);
+    transform: scale(1.5) skewY(-3deg);
+    -webkit-transform: scale(1.5) skewY(-3deg);
+    -moz-transform: scale(1.5) skewY(-3deg);
+    -ms-transform: scale(1.5) skewY(-3deg);
 }
 
 /* ---- END OF SHOWCASE */
@@ -229,3 +238,11 @@ img {
 }
 
 /* ---- END OF CLI ---- */
+
+/* ---- CLOUD ---- */
+
+.cloud .grid {
+    grid-template-columns: 4fr 3fr;
+}
+
+/* ---- END OF CLOUD ---- */
