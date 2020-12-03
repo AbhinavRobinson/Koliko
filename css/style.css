@@ -282,6 +282,10 @@ img {
 
 /* ---- FOOTER ---- */
 
+.footer {
+    margin-top: 1.5rem;
+}
+
 .footer .social a {
     /* spread out footer icons */
     margin: 0 10px;
@@ -295,7 +299,7 @@ img {
 
 /* ---- TABLETS AND UNDER ---- */
 
-@media(max-width: 768px) {
+@media(max-width: 978px) {
     /* convert ever grid to stack */
     .grid,
     .showcase .grid,
@@ -347,6 +351,11 @@ img {
     .navbar ul {
         padding: 10px;
         background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .showcase-form {
+        /* auto fit form for mobiles */
+        width: auto;
     }
 }
 
