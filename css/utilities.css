@@ -107,6 +107,15 @@
     color: #fff;
 }
 
+.bg-primary a,
+.btn-primary a, 
+.bg-secondary a, 
+.btn-secondary a, 
+.bg-dark a, 
+.btn-dark a {
+    color: #fff;
+}
+
 .bg-light, .btn-light {
     background-color: var(--light-color);
     color: #fff;
