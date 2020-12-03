@@ -288,3 +288,66 @@ img {
 }
 
 /* ---- END OF FOOTER ---- */
+
+
+/* ---- RESPONSIVE QUERIES ---- */
+
+
+/* ---- TABLETS AND UNDER ---- */
+
+@media(max-width: 768px) {
+    /* convert ever grid to stack */
+    .grid,
+    .showcase .grid,
+    .stats .grid,
+    .cli .grid,
+    .cloud .grid {
+        /* 1x1 grid */
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .showcase {
+        /* span as much as required */
+        height: auto;
+    }
+
+    .showcase-text {
+        /* move easy deployment text to center */
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .showcase-form {
+        /* justify container to center */
+        justify-self: center;
+        margin: auto;
+    }
+
+    .cli .grid > *:first-child {
+        /* span 2x2 */
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
+
+/* ---- END OF TABLETS AND UNDER ---- */
+
+/* ---- MOBILE ---- */
+
+@media(max-width: 500px) {
+    .navbar {
+        height: 110px;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* ---- END OF MOBILE ---- */
