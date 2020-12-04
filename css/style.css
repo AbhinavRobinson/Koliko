@@ -280,9 +280,23 @@ img {
 
 /* ---- END OF LANGUAGES ---- */
 
+/* ---- FEATURES ---- */
+
+.features-head img {
+    width: 200px;
+    justify-self: flex-end;
+}
+
+.features-sub-head img {
+    width: 300px;
+    justify-self: flex-end;
+}
+
+/* ---- END OF FEATURES ---- */
+
 /* ---- FOOTER ---- */
 
-.footer {
+.home-footer {
     margin-top: 1.5rem;
 }
 
