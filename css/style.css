@@ -248,6 +248,7 @@ img {
 /* ---- CLOUD ---- */
 
 .cloud .grid {
+    /* makes 2 item grid of 4:3 */
     grid-template-columns: 4fr 3fr;
 }
 
@@ -283,11 +284,13 @@ img {
 /* ---- FEATURES ---- */
 
 .features-head img {
+    /* move images to tail */
     width: 200px;
     justify-self: flex-end;
 }
 
 .features-sub-head img {
+    /* move images to tail */
     width: 300px;
     justify-self: flex-end;
 }
@@ -325,6 +328,7 @@ img {
 /* ---- DOCS ---- */
 
 .docs-head img {
+    /* move images to tail */
     width: 200px;
     justify-self: flex-end;
 }
@@ -389,6 +393,7 @@ img {
 
     .features-head img,
     .docs-head img {
+        /* readjust image for small screens, make it centered */
         grid-row: 1;
         width: 150px;
         padding-top: 20px;
@@ -396,6 +401,7 @@ img {
     }
 
     .features-sub-head img {
+        /* readjust image for small screens, make it centered */
         grid-row: 1;
         width: 200px;
         justify-self: center;
@@ -425,11 +431,13 @@ img {
     }
 
     .navbar .flex {
+        /* vertical stack */
         flex-direction: column;
     }
 
     .navbar ul {
         padding: 10px;
+        /* little background for menu items to pop */
         background-color: rgba(0, 0, 0, 0.1);
     }
 
@@ -440,6 +448,7 @@ img {
 
     .features-head img,
     .docs-head img {
+        /* readjust image for small screens, make it centered */
         grid-row: 1;
         width: 150px;
         padding-top: 20px;
@@ -447,6 +456,7 @@ img {
     }
 
     .features-sub-head img {
+        /* readjust image for small screens, make it centered */
         grid-row: 1;
         width: 200px;
         justify-self: center;

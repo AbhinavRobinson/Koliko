@@ -85,6 +85,7 @@
     transform: scale(0.98);
 }
 
+/* button with only border visible */
 .btn-outline {
     background-color: transparent;
     border: 1px #fff solid;
