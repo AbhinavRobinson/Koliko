@@ -387,7 +387,8 @@ img {
         grid-row: 1;
     }
 
-    .features-head img {
+    .features-head img,
+    .docs-head img {
         grid-row: 1;
         width: 150px;
         padding-top: 20px;
@@ -401,12 +402,14 @@ img {
     }
 
     .features-head .xl, 
-    .features-sub-head .md {
+    .features-sub-head .md,
+    .docs-head .xl {
         text-align: center;
     }
 
     .features-head p, 
-    .features-sub-head p {
+    .features-sub-head p,
+    .docs-head p {
         text-align: center;
     }
 
@@ -435,7 +438,8 @@ img {
         width: auto;
     }
 
-    .features-head img {
+    .features-head img,
+    .docs-head img {
         grid-row: 1;
         width: 150px;
         padding-top: 20px;
@@ -449,12 +453,14 @@ img {
     }
 
     .features-head .xl, 
-    .features-sub-head .md {
+    .features-sub-head .md,
+    .docs-head .xl {
         text-align: center;
     }
 
     .features-head p, 
-    .features-sub-head p {
+    .features-sub-head p,
+    .docs-head p {
         text-align: center;
     }
     
