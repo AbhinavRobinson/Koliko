@@ -322,6 +322,15 @@ img {
 
 /* ---- END OF FEATURES ---- */
 
+/* ---- DOCS ---- */
+
+.docs-head img {
+    width: 200px;
+    justify-self: flex-end;
+}
+
+/* ---- END OF DOCS */
+
 /* ---- FOOTER ---- */
 
 .home-footer {
