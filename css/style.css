@@ -14,6 +14,12 @@
 
     /* secondary color */
     --light-color: #f4f4f4;
+
+    /* success color */
+    --success-color: #5cb85c;
+
+    /* success color */
+    --error-color: #d95c4f;
 }
 
 /* ---- UNIVERSAL ---- */
@@ -63,6 +69,12 @@ p {
 img {
     /* images stay within container */
     width: 100%;
+}
+
+code, pre {
+    background-color: #333;
+    color: white;
+    padding: 10px;
 }
 
 /* ---- END OF UNIVERSAL ---- */
