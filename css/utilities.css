@@ -131,6 +131,11 @@
     color: #fff;
 }
 
+.bg-light, .btn-light {
+    background-color: var(--light-color);
+    color: #000;
+}
+
 .bg-primary a,
 .btn-primary a, 
 .bg-secondary a, 
@@ -140,12 +145,27 @@
     color: #fff;
 }
 
-.bg-light, .btn-light {
-    background-color: var(--light-color);
-    color: #000;
+/* ---- END OF BGS AND COLORED BTNS ---- */
+
+/* ---- TEXT COLORS ---- */
+
+.text-primary {
+    color: var(--primary-color);
 }
 
-/* ---- END OF BGS AND COLORED BTNS ---- */
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-dark {
+    color: var(--dark-color);
+}
+
+.text-light {
+    color: var(--light-color);
+}
+
+/* ---- END OF TEXT COLORS ---- */
 
 /* ---- TEXT SIZES ---- */
 
