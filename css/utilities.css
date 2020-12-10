@@ -15,6 +15,29 @@
 .text-center {
     text-align: center;
 }
+
+/* ---- ALERTS ---- */
+.alert {
+    background-color: var(--light-color);
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.alert i {
+    margin-right: 10px;
+}
+
+.alert-success {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.alert-error {
+    background-color: var(--error-color);
+    color: white;
+}
+
+/* ---- END OF ALERTS ---- */
  
 .flex{
     /* time to flex :) */
@@ -85,6 +108,7 @@
     transform: scale(0.98);
 }
 
+/* button with only border visible */
 .btn-outline {
     background-color: transparent;
     border: 1px #fff solid;
