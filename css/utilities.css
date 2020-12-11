@@ -39,6 +39,8 @@
 
 /* ---- END OF ALERTS ---- */
  
+/* ---- GRIDS AND FLEX ---- */
+
 .flex{
     /* time to flex :) */
     display: flex;
@@ -81,6 +83,10 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
+/* ---- END OF GRIDS AND FLEX ---- */
+
+/* ---- CARDS AND BUTTONS ---- */
+
 .card {
     background-color: #fff;
     color: #333;
@@ -113,6 +119,8 @@
     background-color: transparent;
     border: 1px #fff solid;
 }
+
+/* ---- END OF CARDS AND BUTTONS ---- */
 
 /* ---- BACKGROUDS AND COLORED BUTTONS ---- */
 
